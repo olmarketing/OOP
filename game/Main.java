@@ -13,6 +13,7 @@ public class Main {
         heroes.add(new Monk("Дмитрий"));
         heroes.add(new Spearman("Ярослав"));
         heroes.add(new Thief("Роман"));
+        heroes.add(new Farmer("Андрей"));
 
 
         heroes.forEach(n ->System.out.println(n));
