@@ -5,4 +5,10 @@ public class Thief extends BaseHero{
         super(200,name,1,6,50,new int[]{10,20}, "Вор");
 
     }
+
+    @Override
+    public String getInfo() {
+        return "Я вор";
+    }
+
 }

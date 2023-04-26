@@ -2,9 +2,7 @@ package org.game.units;
 
 import org.game.weapons.Weapons;
 
-import java.util.Random;
-
-public class BaseHero {
+public abstract class BaseHero implements GameInterface {
     public String name;
     public String className;
     protected int x;
@@ -34,5 +32,14 @@ public class BaseHero {
     protected int getInt(){
         return 1;
         }
+
+    @Override
+    public void  step(){}
+
+    @Override
+    public String getInfo() {
+        return "";
     }
+}
+
 

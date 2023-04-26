@@ -1,6 +1,8 @@
 package org.game.units;
 
 public interface GameInterface {
-    void step();
+
+    void  step();
+
     String getInfo();
 }
