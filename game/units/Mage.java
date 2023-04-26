@@ -1,14 +1,13 @@
 package org.game.units;
 
-import org.game.Spells;
 
 import java.util.ArrayList;
 
 public class Mage extends BaseHero{
     protected int mana;
-    protected ArrayList<Spells> spellsBook;
+
     public Mage(String name){
-        super(100,name,1,6,15,new int[]{3,15}, "Маг");
+        super(100,name,1,6,15,new int[]{3,15});
         mana=100;
 //        spellsBook.add(new Spells("Фаербол"));
 //        spellsBook.add(new Spells("Увеличение брони"));
@@ -17,6 +16,6 @@ public class Mage extends BaseHero{
 
     @Override
     public String getInfo() {
-        return "Я маг";
+        return "Маг";
     }
 }

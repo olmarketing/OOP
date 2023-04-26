@@ -4,7 +4,6 @@ import org.game.weapons.Weapons;
 
 public abstract class BaseHero implements GameInterface {
     public String name;
-    public String className;
     protected int x;
     protected int y;
     protected int hp;
@@ -16,17 +15,17 @@ public abstract class BaseHero implements GameInterface {
     protected Weapons weapon;
 @Override
     public String toString(){
-        return name+" "+hp+" "+armor+" "+weapon+" "+className;
+        return name+" "+hp+" "+armor+" "+weapon;
     }
 
-    public BaseHero(int hp, String name, int x, int y, int armor,int[] damage,String className) {
+    public BaseHero(int hp, String name, int x, int y, int armor,int[] damage) {
         this.hp = this.maxhp = hp;
         this.name = name;
         this.x = x;
         this.y = y;
         this.armor = armor;
         this.damage = damage;
-        this.className = className;
+
     }
 
     protected int getInt(){

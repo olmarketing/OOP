@@ -5,8 +5,8 @@ public abstract class Shooter extends BaseHero {
     int accuracy;
 
 
-    public Shooter(int hp, String name, int x, int y, int armor, int[] damage, String className, int arrows, int accuracy) {
-        super(hp, name, x, y, armor, damage, className);
+    public Shooter(int hp, String name, int x, int y, int armor, int[] damage, int arrows, int accuracy) {
+        super(hp, name, x, y, armor, damage);
     this.arrows=arrows;
     this.accuracy=accuracy;
     }
